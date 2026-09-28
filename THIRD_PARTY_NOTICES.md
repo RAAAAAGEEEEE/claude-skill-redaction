@@ -1,6 +1,13 @@
+# Third-party notices
+
+`references/anti-ia.md` is a French adaptation of the SKILL.md of
+blader/humanizer (https://github.com/blader/humanizer), version 3.1.0,
+distributed under the following license:
+
+```
 MIT License
 
-Copyright (c) 2026 Anto1nx
+Copyright (c) 2025 Siqi Chen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +26,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```

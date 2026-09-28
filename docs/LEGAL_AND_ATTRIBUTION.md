@@ -18,7 +18,8 @@ motif 21 retourné (en français, ce sont les guillemets anglais qui sont
 fautifs) ; règle des tirets alignée sur celle du skill (cadratin
 interdit, demi-cadratin permis dans une plage) ; section G ajoutée.
 
-La notice MIT de l'original figure dans [LICENSE](../LICENSE).
+La notice MIT de l'original figure dans
+[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md).
 
 ## Wikipédia
 

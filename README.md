@@ -128,7 +128,8 @@ Voir [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Licence
 
 MIT, voir [LICENSE](LICENSE). `references/anti-ia.md` adapte
-blader/humanizer (MIT, Siqi Chen) : voir
+blader/humanizer (MIT, Siqi Chen) : notice dans
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), détail dans
 [docs/LEGAL_AND_ATTRIBUTION.md](docs/LEGAL_AND_ATTRIBUTION.md).
 
 ## Documentation

@@ -25,4 +25,5 @@ Première version.
   détection des textes d'IA, 9 lignes ESTABLISHED, 9 SUPPORTED,
   5 CLAIMED.
 - `scripts/verifier.py` : contrôle mécanique hors ligne ; 21 tests.
-- Documentation selon le standard GitHub du mainteneur.
+- Documentation selon le standard GitHub du mainteneur ; notice MIT de
+  blader/humanizer dans `THIRD_PARTY_NOTICES.md`.
