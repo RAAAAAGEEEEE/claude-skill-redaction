@@ -432,9 +432,11 @@ que, force est de constater, il va sans dire, pas de doute.
 
 **À surveiller** : ouverture par « Vous êtes-vous déjà demandé… ? » ;
 une question par paragraphe ; question posée pour y répondre aussitôt.
-**Exception** : la question finale d'un tweet, voulue par
-`redaction-tweets-viraux`, et la vraie question d'un e-mail de
-prospection (elle appelle une réponse).
+**Exceptions** : la question finale d'un tweet, voulue par
+`redaction-tweets-viraux` ; la vraie question d'un e-mail de prospection
+(elle appelle une réponse) ; **une** question-titre sur une page de vente
+quand `copywriting` la propose (« Marre de relancer vos devis ? »). Une,
+pas une série.
 
 ### G4. Emphase à l'anglaise
 

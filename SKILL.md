@@ -19,7 +19,7 @@ description: >
 
 # Rédaction
 
-Version 1.0.0, état de l'art revu le **2026-09-28**
+Version 1.0.1, état de l'art revu le **2026-09-28**
 ([CHANGELOG.md](CHANGELOG.md)). Au-delà de 6 mois, revérifier les
 affirmations datées de [etat-de-l-art.md](references/etat-de-l-art.md)
 avant de les ressortir.

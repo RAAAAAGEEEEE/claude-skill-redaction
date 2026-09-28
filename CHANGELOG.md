@@ -3,6 +3,13 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 Versions selon [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.1] - 2026-09-28
+
+### Modifié
+- `references/anti-ia.md`, G3 : une question-titre sur une page de vente
+  est permise quand `copywriting` la propose (une seule, pas une série),
+  pour lever la contradiction entre les deux skills.
+
 ## [1.0.0] - 2026-09-28
 
 Première version.
