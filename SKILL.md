@@ -19,7 +19,7 @@ description: >
 
 # Rédaction
 
-Version 1.0.1, état de l'art revu le **2026-09-28**
+Version 1.0.2, état de l'art revu le **2026-09-28**
 ([CHANGELOG.md](CHANGELOG.md)). Au-delà de 6 mois, revérifier les
 affirmations datées de [etat-de-l-art.md](references/etat-de-l-art.md)
 avant de les ressortir.
@@ -137,7 +137,7 @@ sur un fait ou sur l'action demandée, pas sur une morale.
   cloche dans l'angle ou le lecteur visé.
 - Mode humanisé demandé : insérer les coquilles **en dernier**, selon
   [humanisation.md](references/humanisation.md), puis relancer le
-  vérificateur (il ne doit rien signaler de nouveau).
+  vérificateur (rien de nouveau, sauf les coquilles listées).
 
 ### 6. Sortie
 

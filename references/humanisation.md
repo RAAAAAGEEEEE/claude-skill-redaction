@@ -44,17 +44,19 @@ skill fixe « long » à 800 mots et plus (convention du skill, à ajuster si
 l'utilisateur le demande). En dessous : aucune, sauf demande explicite de l'utilisateur
 pour ce texte.
 
-**Quelle forme** : une faute de frappe banale sur un mot courant, du genre
-qu'un correcteur laisse passer :
+**Quelle forme** : une faute de frappe banale sur un mot courant d'au
+moins six lettres, en minuscules, sans apostrophe ni trait d'union, du
+genre qu'un correcteur laisse passer. Les mêmes trois formes que le
+module `typos.ts` d'un site d'actualité, pour que les deux restent cohérents :
 
-- lettre doublée ou manquante (« quelqes », « parraitre ») ;
-- deux lettres inversées (« porblème », « ofrfe ») ;
-- touche voisine sur un clavier AZERTY (« semqine » pour « semaine »).
+- accent oublié (« developpement », « deja ») ;
+- deux lettres intérieures inversées (« porblème ») ;
+- consonne double simplifiée (« dévelopement », « comercial »).
 
 Pas de faute de grammaire, d'accord ni d'homophone (« a/à », « ces/ses »,
 « et/est ») : elles passent pour de l'ignorance, pas pour de la frappe.
-Pas d'accent retiré : le vérificateur le prend pour un texte
-désaccentué.
+Un accent oublié fait réagir le vérificateur (`accent-manquant`, P1) :
+c'est attendu, la coquille est listée en sortie.
 
 **Jamais dans** :
 

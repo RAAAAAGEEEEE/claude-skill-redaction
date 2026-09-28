@@ -3,6 +3,15 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 Versions selon [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.2] - 2026-09-28
+
+### Modifié
+- `references/humanisation.md` : les formes de coquille sont celles du
+  module de coquilles d'un site d'actualité (accent oublié, lettres inversées,
+  consonne double simplifiée), sur des mots courants de six lettres ou
+  plus ; l'accent oublié n'est plus exclu. Le vérificateur le signale en
+  P1, ce qui est attendu puisque la coquille est listée.
+
 ## [1.0.1] - 2026-09-28
 
 ### Modifié

@@ -4,7 +4,7 @@ Issues et pull requests bienvenues.
 
 ## Avant d'ouvrir une pull request
 
-1. `python -m unittest discover -s tests` passe. À la version 1.0.1,
+1. `python -m unittest discover -s tests` passe. À la version 1.0.2,
    21 tests hors ligne passent.
 2. Toute règle ajoutée à `scripts/verifier.py` a un test dans `tests/`, et
    `tests/fixtures/propre.md` ne produit toujours aucun constat.
