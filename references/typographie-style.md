@@ -37,7 +37,7 @@ partout plutôt que mélanger.
   public québécois.
 - Quand le canal ne transporte pas les insécables (champ JSON d'un
   pipeline, SMS, certains outils d'e-mailing), une espace ordinaire est
-  acceptée. C'est le choix des prompts d'un site d'actualité. **Jamais d'absence
+  acceptée. **Jamais d'absence
   d'espace** (`Attention:` est faux).
 - Points de suspension : un seul caractère `…`, trois points au plus,
   jamais « etc. … ».
@@ -58,9 +58,8 @@ partout plutôt que mélanger.
 
 ## Tirets
 
-- **Cadratin (—)** : interdit par règle dure du skill, reprise de la
-  règle globale de l'utilisateur du 2026-08-05 (c'est la marque typographique la
-  plus reconnaissable d'un texte de modèle). Seule exception : une
+- **Cadratin (—)** : interdit par règle dure du skill (c'est la marque
+  typographique la plus reconnaissable d'un texte de modèle). Seule exception : une
   citation verbatim (avis client, extrait de presse).
 - **Demi-cadratin (–)** : plage de valeurs sans espaces (`2024–2026`,
   `lun.–ven.`). En phrase courante, préférer « de 9 h à 12 h ».
@@ -149,8 +148,7 @@ Une liste sert une vraie énumération, jamais un paragraphe découpé.
 - **Dire le manque** : « le fabricant ne communique pas l'autonomie » est
   une information.
 - **Registre** : vouvoiement par défaut pour un client ou un inconnu ;
-  tutoiement si la marque ou l'échantillon le fait (c'est le cas des
-  tweets de l'utilisateur). Une fois choisi, ne plus en changer.
+  tutoiement si la marque ou l'échantillon le fait. Une fois choisi, ne plus en changer.
 - **Jargon** : l'expliquer à la première occurrence, ou employer le mot du
   lecteur.
 - **Accents** : un brief écrit sans accents ne s'imite pas. Le

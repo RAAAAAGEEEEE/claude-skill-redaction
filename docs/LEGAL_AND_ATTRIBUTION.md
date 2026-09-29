@@ -28,11 +28,11 @@ blader/humanizer s'appuie sur la page
 (WikiProject AI Cleanup). Ce dépôt ne reproduit pas son texte ; il la cite
 comme source.
 
-## Prompts éditoriaux d'un site d'actualité
+## Consignes éditoriales de l'auteur
 
-La liste « Ce que tu n'écris jamais » des prompts de rédaction d'un site d'actualité
-(même auteur que ce skill) a servi de base aux listes françaises et à la
-section G.
+Les listes françaises et la section G reprennent des consignes de
+rédaction internes à l'auteur du skill (non publiées). Elles sont
+classées CLAIMED : ce sont des observations, pas des mesures.
 
 ## Sources citées
 

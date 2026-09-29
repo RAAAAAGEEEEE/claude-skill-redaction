@@ -30,3 +30,5 @@ Ouvrir une issue sans détail exploitable, ou contacter le mainteneur via
 son profil GitHub.
 
 Voir aussi : [LIMITATIONS.md](LIMITATIONS.md).
+
+Signalement d'un problème de sécurité : voir [../SECURITY.md](../SECURITY.md).

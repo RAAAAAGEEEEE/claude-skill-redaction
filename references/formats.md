@@ -123,8 +123,8 @@ aucune fantaisie, aucune coquille, même en mode humanisé.
   exacts ; versions et dates explicites (« au 2026-09-28 », jamais
   « actuellement »).
 - Aucun ton marketing, aucune promesse chiffrée sans source.
-- Dépôt GitHub de l'utilisateur : appliquer
-  `~/.claude/standards/GITHUB_DOCUMENTATION_STANDARD.md`.
+- Dépôt GitHub public : README court, LICENSE, CHANGELOG, CONTRIBUTING,
+  et le détail dans `docs/`.
 
 ## Fiche Google (Business Profile), description produit
 

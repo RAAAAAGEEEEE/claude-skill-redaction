@@ -27,6 +27,13 @@ aussi le nommer : « avec le skill redaction, … ».
 - Tweet ou fil X : `redaction-tweets-viraux` mène, `redaction` peut être
   chargé en complément pour la langue.
 
+## Rejouer les cas d'évaluation
+
+Les 6 cas de `evals/evals.json` se rejouent dans une session Claude Code :
+copier le champ `prompt` (et le fichier `input_file` s'il y en a un), puis
+comparer la sortie à `expected_output` et aux `assertions`. Mode d'emploi :
+[../evals/README.md](../evals/README.md).
+
 ## Le vérificateur en ligne de commande
 
 ```bash

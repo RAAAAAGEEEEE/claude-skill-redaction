@@ -36,7 +36,7 @@ Un CLAIMED ne fonde jamais une règle dure du skill.
    d'intérêt public, sauf relecture humaine ou contrôle éditorial avec
    responsabilité éditoriale (ESTABLISHED).
 6. **Coquilles volontaires** : aucune source ne mesure leur effet ; c'est
-   une préférence de l'utilisateur, encadrée dans
+   une préférence de l'auteur du skill, encadrée dans
    [humanisation.md](humanisation.md).
 7. **Français** : aucune étude indépendante trouvée sur les tics propres
    aux modèles en français ; les listes françaises du skill sont CLAIMED.
@@ -79,7 +79,7 @@ Un CLAIMED ne fonde jamais une règle dure du skill.
 | Catalogue de signes d'écriture IA ; ce sont des indices, pas des preuves ; détecteurs à taux d'erreur non négligeables | [Wikipédia, Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (consulté le 2026-09-28) | Guide communautaire |
 | Pangram 4 : AUROC 0,9916, 0,0041 % de faux positifs | [Pangram Labs, arXiv 2607.27183](https://arxiv.org/abs/2607.27183) (2026-07-29) | Rapport du vendeur sur son produit |
 | Étude sur 11 000 textes français : le détecteur de l'éditeur arrive premier | [Lucide.ai](https://lucide.ai/meilleur-detecteur-ia-comparatif) (2026-07) | Conflit d'intérêts : l'éditeur se classe lui-même |
-| Liste française de tournures de remplissage, de vocabulaire gonflé et de faux contrastes | Prompts éditoriaux d'un site d'actualité, v2.1.0 (2026-09-28) | Même auteur ; base des sections G et des listes françaises |
+| Liste française de tournures de remplissage, de vocabulaire gonflé et de faux contrastes | Consignes éditoriales internes de l'auteur du skill (2026-09-28), non publiées | Base des sections G et des listes françaises ; CLAIMED |
 
 ## Ce qui n'a pas été trouvé
 

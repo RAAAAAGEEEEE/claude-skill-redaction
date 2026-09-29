@@ -28,12 +28,12 @@ Ce skill ne promet jamais qu'un texte sera « indétectable » : aucune
 source ne permet de le garantir, et ce n'est pas le but. Le but est un
 texte qu'on a envie de lire.
 
-## Les coquilles (préférence de l'utilisateur)
+## Les coquilles (option sur demande)
 
-Préférence exprimée par l'utilisateur, pas une technique démontrée : aucune
+Option demandée par certains utilisateurs, pas une technique démontrée : aucune
 étude trouvée au 2026-09-28 ne mesure l'effet de fautes volontaires sur
-les lecteurs, les détecteurs ou le classement (statut : préférence du
-propriétaire ; effet non documenté).
+les lecteurs, les détecteurs ou le classement (statut : préférence de
+l'utilisateur ; effet non documenté).
 
 **Quand** : uniquement si l'utilisateur demande un texte « humanisé »
 (« humanise », « version humaine », « rends-le moins IA »). Jamais par
@@ -41,13 +41,12 @@ défaut, jamais parce qu'un autre skill le suggère.
 
 **Combien** : une ou deux coquilles ordinaires par **article long**. Ce
 skill fixe « long » à 800 mots et plus (convention du skill, à ajuster si
-l'utilisateur le demande). En dessous : aucune, sauf demande explicite de l'utilisateur
-pour ce texte.
+l'utilisateur le demande). En dessous : aucune, sauf demande explicite de
+l'utilisateur pour ce texte.
 
 **Quelle forme** : une faute de frappe banale sur un mot courant d'au
 moins six lettres, en minuscules, sans apostrophe ni trait d'union, du
-genre qu'un correcteur laisse passer. Les mêmes trois formes que le
-module `typos.ts` d'un site d'actualité, pour que les deux restent cohérents :
+genre qu'un correcteur laisse passer. Trois formes seulement :
 
 - accent oublié (« developpement », « deja ») ;
 - deux lettres intérieures inversées (« porblème ») ;
@@ -83,7 +82,7 @@ listée est une faute, pas un choix.
 ## Transparence
 
 Humaniser le style ne retire pas une mention d'assistance par IA que le
-site affiche (un site d'actualité qui signale ses articles comme assistés par IA) ou que la
+site affiche (par exemple une mention « article assisté par IA ») ou que la
 loi impose. Pour un texte publié afin d'informer le public sur une
 question d'intérêt public, l'AI Act exige de signaler un texte généré,
 sauf relecture humaine ou contrôle éditorial avec une personne qui en

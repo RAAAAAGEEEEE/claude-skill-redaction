@@ -3,12 +3,25 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 Versions selon [SemVer](https://semver.org/lang/fr/).
 
+## [1.1.0] - 2026-09-29
+
+### Ajouté
+- `evals/` : 6 cas d'évaluation fictifs (`evals.json`, fixtures,
+  `README.md`) et `tests/test_evals.py` (7 tests).
+- Front-matter portable de `SKILL.md` : `license`, `compatibility`,
+  `metadata` (auteur, version, dépôt), `allowed-tools`.
+
+### Modifié
+- Publication : toute référence à des projets ou à une infrastructure
+  privés est retirée de la documentation (exemples et sources neutres).
+  L'historique git antérieur n'est pas réécrit.
+- `LICENSE` : nom complet du titulaire du droit d'auteur.
+
 ## [1.0.2] - 2026-09-28
 
 ### Modifié
-- `references/humanisation.md` : les formes de coquille sont celles du
-  module de coquilles d'un site d'actualité (accent oublié, lettres inversées,
-  consonne double simplifiée), sur des mots courants de six lettres ou
+- `references/humanisation.md` : les formes de coquille sont au nombre de trois
+  (accent oublié, lettres inversées, consonne double simplifiée), sur des mots courants de six lettres ou
   plus ; l'accent oublié n'est plus exclu. Le vérificateur le signale en
   P1, ce qui est attendu puisque la coquille est listée.
 

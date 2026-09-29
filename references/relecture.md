@@ -6,7 +6,7 @@ toute relecture faite sans lui.
 ## Pourquoi une passe séparée
 
 Un modèle qui relit son propre texte le défend ; un relecteur qui ne l'a
-pas écrit le coupe. La règle de l'utilisateur : toute rédaction publiée ou
+pas écrit le coupe. La règle du skill : toute rédaction publiée ou
 envoyée passe par une rédaction, une relecture distincte par un modèle
 plus fort, et une réécriture seulement si la relecture a trouvé quelque
 chose. Aucun texte n'est « trop court » pour y échapper : un objet

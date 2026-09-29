@@ -17,7 +17,8 @@ redaction/
 │   ├── humanisation.md         étape 5 : mode humanisé et coquilles
 │   └── etat-de-l-art.md        registre daté des preuves
 ├── scripts/verifier.py         contrôle mécanique, hors ligne
-├── tests/                      tests du vérificateur et fixtures
+├── tests/                      tests du vérificateur, des evals et fixtures
+├── evals/                      cas d'évaluation fictifs (evals.json, fixtures)
 └── docs/                       documentation humaine
 ```
 

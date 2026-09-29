@@ -38,9 +38,11 @@ jets générés.
 
 ## Statut
 
-**Bêta, version 1.0.2** (2026-09-28). Le vérificateur est couvert par
-21 tests hors ligne. Le comportement du skill dans Claude (choix du
-skill, qualité des textes) n'a pas d'évaluation automatique. Voir
+**Bêta, version 1.1.0** (2026-09-29). Le vérificateur et les cas
+d'évaluation sont couverts par 28 tests hors ligne. Le comportement du
+skill dans Claude (choix du skill, qualité des textes) n'a pas
+d'évaluation automatique : 6 cas sont fournis dans `evals/` pour être
+rejoués à la main. Voir
 [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
 
 ## Exemple de sortie du vérificateur
@@ -118,7 +120,8 @@ Liste complète : [docs/LIMITATIONS.md](docs/LIMITATIONS.md).
 
 ## Feuille de route (non contractuelle)
 
-- Évaluations de déclenchement (quelles demandes chargent le skill).
+- Exécution automatisée des cas de `evals/` et évaluations de
+  déclenchement (quelles demandes chargent le skill).
 - Mesure des tics sur un corpus français, si une étude sérieuse paraît.
 
 ## Contribuer
@@ -137,10 +140,12 @@ blader/humanizer (MIT, Siqi Chen) : notice dans
 - [SKILL.md](SKILL.md) : la procédure lue par Claude
 - [docs/INSTALLATION.md](docs/INSTALLATION.md)
 - [docs/USAGE.md](docs/USAGE.md)
+- [evals/README.md](evals/README.md) : cas d'évaluation
 - [docs/CONFIGURATION.md](docs/CONFIGURATION.md)
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
 - [docs/LIMITATIONS.md](docs/LIMITATIONS.md)
 - [docs/PRIVACY_AND_SECURITY.md](docs/PRIVACY_AND_SECURITY.md)
+- [SECURITY.md](SECURITY.md)
 - [docs/LEGAL_AND_ATTRIBUTION.md](docs/LEGAL_AND_ATTRIBUTION.md)
 - [CHANGELOG.md](CHANGELOG.md)

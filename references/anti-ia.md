@@ -411,8 +411,8 @@ page.
 
 ## G. Tics propres au français (ajouts de ce skill)
 
-Issus des prompts éditoriaux d'un site d'actualité (même auteur) et de relectures de
-textes générés en français. CLAIMED.
+Issus des consignes éditoriales internes de l'auteur du skill et de
+relectures de textes générés en français. CLAIMED.
 
 ### G1. Conclusions annoncées
 

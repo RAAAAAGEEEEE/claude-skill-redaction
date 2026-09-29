@@ -1,8 +1,10 @@
 # Limites
 
-- **Pas d'évaluation du comportement du modèle.** Les 21 tests couvrent
-  le vérificateur seul. Rien ne mesure automatiquement si Claude choisit
-  ce skill au bon moment ni si ses textes sont meilleurs.
+- **Pas d'évaluation du comportement du modèle.** Les 28 tests couvrent
+  le vérificateur et la cohérence des cas de `evals/`. Rien ne mesure
+  automatiquement si Claude choisit ce skill au bon moment ni si ses
+  textes sont meilleurs ; les 6 cas de [evals/](../evals/README.md) se
+  rejouent à la main.
 - **Listes françaises non mesurées.** Au 2026-09-28, aucune étude
   indépendante ne mesure les tics des modèles en français ; les listes
   sont des observations (CLAIMED). Les études citées portent sur

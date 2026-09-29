@@ -15,11 +15,20 @@ description: >
   conversion), `redaction-tweets-viraux` (ton des tweets) et
   `three-pass-writing` (copie produit ancrée dans un dépôt) : ce skill fixe
   la langue, les faits et la relecture.
+license: MIT
+compatibility: >
+  Claude Code (skills personnels ou par projet). Python 3.10+ optionnel pour
+  scripts/verifier.py (bibliothèque standard seulement, aucun accès réseau).
+metadata:
+  author: Anto1nx
+  version: "1.1.0"
+  repository: https://github.com/RAAAAAGEEEEE/claude-skill-redaction
+allowed-tools: Read Edit Write Bash(python:*) Bash(python3:*) Agent
 ---
 
 # Rédaction
 
-Version 1.0.2, état de l'art revu le **2026-09-28**
+Version 1.1.0, état de l'art revu le **2026-09-28**
 ([CHANGELOG.md](CHANGELOG.md)). Au-delà de 6 mois, revérifier les
 affirmations datées de [etat-de-l-art.md](references/etat-de-l-art.md)
 avant de les ressortir.
@@ -204,7 +213,7 @@ daté : [etat-de-l-art.md](references/etat-de-l-art.md).
 - « Fais-moi une version humanisée de ce billet » : réécriture puis
   coquilles, listées en sortie.
 - « Écris le README de ce projet » : format documentation, plus le
-  standard GitHub de l'utilisateur s'il s'agit d'un dépôt public.
+  standard de documentation du dépôt (README, LICENSE, CHANGELOG, docs/) s'il s'agit d'un dépôt public.
 
 ## Exemple de sortie (illustratif, noms et numéro fictifs)
 
@@ -230,7 +239,17 @@ Reste : [[à confirmer : date du changement de numéro]].
   un P0, 2 si l'entrée est illisible. Options :
   [docs/CONFIGURATION.md](docs/CONFIGURATION.md).
 - Tests du script : `python -m unittest discover -s tests`. Il n'existe
-  pas d'évaluation automatique du comportement du modèle.
+  pas d'évaluation automatique du comportement du modèle, mais des cas
+  d'évaluation à rejouer à la main dans `evals/` (voir ci-dessous).
+
+## Évaluations
+
+`evals/evals.json` contient 6 cas fictifs (prompt, sortie attendue,
+assertions) : e-mail de prospection, réécriture d'un texte d'IA, relecture
+seule, brief sans accents, témoignages à ne pas inventer, texte anglais hors
+périmètre. Les sorties de référence et les sorties fautives sont contrôlées
+hors ligne par `tests/test_evals.py` ; les attentes sur le comportement de
+Claude se jugent à la lecture. Mode d'emploi : [evals/README.md](evals/README.md).
 
 ## Installation
 
@@ -254,6 +273,6 @@ Détail : [docs/PRIVACY_AND_SECURITY.md](docs/PRIVACY_AND_SECURITY.md).
   français [blader/humanizer](https://github.com/blader/humanizer) v3.1.0
   (Siqi Chen, licence MIT), lui-même fondé sur la page Wikipédia
   « Signs of AI writing ».
-- La liste « Ce que tu n'écris jamais » des prompts éditoriaux d'un site d'actualité
-  (même auteur) a servi de base aux relevés français.
+- Les listes françaises (sections G de anti-ia.md) reprennent les consignes
+  éditoriales internes de l'auteur du skill ; elles ne sont pas publiées.
 - Détail : [docs/LEGAL_AND_ATTRIBUTION.md](docs/LEGAL_AND_ATTRIBUTION.md).

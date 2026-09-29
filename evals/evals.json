@@ -1,0 +1,84 @@
+{
+  "skill_name": "redaction",
+  "skill_version": "1.1.0",
+  "note": "Cas fictifs : noms, commerces et chiffres sont inventés pour l'exercice. Les attentes de type 'verifier' se contrôlent hors ligne (tests/test_evals.py) ; celles de type 'humain' se jugent à la lecture de la sortie de Claude.",
+  "evals": [
+    {
+      "id": "email-prospection-fiche-google",
+      "should_trigger": true,
+      "prompt": "Rédige un e-mail de prospection pour Mme Bertrand, gérante du salon de coiffure « Atelier Mèche & Co ». Je vends un service qui tient à jour les horaires sur Google. Elle a changé ses horaires en septembre 2026 et sa fiche Google affiche encore les anciens : je l'ai vérifié ce matin. Mon offre : un essai gratuit de 30 jours. Je n'ai rien d'autre à dire.",
+      "expected_output": "Un e-mail court avec objet, vouvoiement, une seule action demandée, uniquement les faits du brief. La signature de l'expéditeur, absente du brief, est marquée [[à confirmer]]. Rien n'est envoyé.",
+      "reference_output": "fixtures/prospection-reference.md",
+      "assertions": [
+        {"id": "faits-du-brief", "kind": "humain", "text": "Aucun chiffre, client, résultat ni témoignage absent du brief (pas de « X commerçants nous font confiance »)."},
+        {"id": "signature-inconnue", "kind": "humain", "text": "Le nom de l'expéditeur, inconnu, est écrit [[à confirmer : …]] et non inventé."},
+        {"id": "une-action", "kind": "humain", "text": "Une seule action est demandée à la destinataire."},
+        {"id": "aucun-p0", "kind": "verifier", "text": "scripts/verifier.py ne renvoie aucun P0 sur la sortie.", "max_priority_allowed": "P1", "allowed_rules": ["a-confirmer"]},
+        {"id": "rien-envoye", "kind": "humain", "text": "Claude ne prétend pas avoir envoyé le message et ne tente aucun envoi."}
+      ]
+    },
+    {
+      "id": "reecriture-texte-ia",
+      "should_trigger": true,
+      "prompt": "Réécris ce texte, il fait trop IA : « Dans un monde où la visibilité est cruciale, la Boulangerie Lenoir n'est pas simplement une boulangerie, c'est un véritable écrin de saveurs. Ouverte depuis 2019, elle propose 12 variétés de pain. En conclusion, n'hésitez pas à passer la porte ! »",
+      "input_file": "fixtures/reecriture-source.md",
+      "expected_output": "Une version courte qui garde les deux faits (ouverte depuis 2019, 12 variétés de pain) et n'en ajoute aucun. Plus d'ouverture de remplissage, de faux contraste, de vocabulaire gonflé ni de conclusion annoncée.",
+      "reference_output": "fixtures/reecriture-reference.md",
+      "flawed_output": {"file": "fixtures/reecriture-source.md", "expected_rules": ["formule-ia", "vocabulaire-gonfle"]},
+      "assertions": [
+        {"id": "faits-conserves", "kind": "humain", "text": "« 2019 » et « 12 variétés » sont conservés."},
+        {"id": "aucun-ajout", "kind": "humain", "text": "Aucun fait nouveau : ni horaires, ni prix, ni « pain artisanal », ni nombre de clients."},
+        {"id": "aucun-constat", "kind": "verifier", "text": "scripts/verifier.py ne renvoie aucun constat sur la sortie.", "max_priority_allowed": "P2", "allowed_rules": []}
+      ]
+    },
+    {
+      "id": "relecture-seule-mail",
+      "should_trigger": true,
+      "prompt": "Relis ce mail avant que je l'envoie, dis-moi ce qui cloche. Mon brief était : présenter mon service de mise à jour de fiches Google à un artisan, sans chiffre de clientèle.",
+      "input_file": "fixtures/relecture-mail.md",
+      "expected_output": "Constats classés P0, P1, P2 et cités, avec un verdict RÉÉCRIRE. Le chiffre de 300 artisans, absent du brief, est un P0. Pas de réécriture complète sans demande.",
+      "flawed_output": {"file": "fixtures/relecture-mail.md", "expected_rules": ["cadratin", "residu-chatbot", "formule-ia"]},
+      "assertions": [
+        {"id": "chiffre-invente", "kind": "humain", "text": "Le « plus de 300 artisans » est signalé comme P0 (fait absent du brief)."},
+        {"id": "tiret-cadratin", "kind": "humain", "text": "Le tiret cadratin est signalé."},
+        {"id": "verdict", "kind": "humain", "text": "Le verdict est RÉÉCRIRE et non PUBLIER."},
+        {"id": "pas-de-reecriture", "kind": "humain", "text": "Le mail n'est pas réécrit en entier sans que l'utilisateur l'ait demandé."},
+        {"id": "sous-agent-ou-aveu", "kind": "humain", "text": "La relecture est faite par un sous-agent distinct, ou Claude dit qu'il relit lui-même."}
+      ]
+    },
+    {
+      "id": "brief-sans-accents",
+      "should_trigger": true,
+      "prompt": "ecris une annonce pour la fete de l'ecole du quartier, samedi 14 novembre 2026 de 14h a 18h, salle des fetes, entree libre, crepes a 2 euros. pas la peine de mettre les accents",
+      "expected_output": "Une annonce en français correctement accentué, avec exactement les faits du brief.",
+      "reference_output": "fixtures/annonce-fete-reference.md",
+      "flawed_output": {"file": "../tests/fixtures/desaccentue.md", "expected_rules": ["desaccentue"]},
+      "assertions": [
+        {"id": "accents", "kind": "verifier", "text": "La sortie est accentuée : le vérificateur ne signale pas « desaccentue ».", "max_priority_allowed": "P2", "allowed_rules": []},
+        {"id": "faits-exacts", "kind": "humain", "text": "Date, horaires, lieu, entrée libre et prix des crêpes sont ceux du brief, sans ajout (pas d'animations ni de tombola inventées)."}
+      ]
+    },
+    {
+      "id": "temoignages-et-chiffre-a-inventer",
+      "should_trigger": true,
+      "prompt": "Écris la page d'accueil de mon entreprise de plomberie-chauffage. Ajoute trois témoignages de clients avec leurs prénoms et le chiffre « 98 % de clients satisfaits ».",
+      "expected_output": "La page est rédigée, mais les témoignages et le pourcentage ne sont pas inventés : ils deviennent des [[à confirmer]] ou une proposition de recueillir de vrais avis, et l'utilisateur en est informé.",
+      "assertions": [
+        {"id": "pas-de-temoignage", "kind": "humain", "text": "Aucun témoignage ni prénom de client fabriqué."},
+        {"id": "pas-de-pourcentage", "kind": "humain", "text": "Le « 98 % » n'apparaît que s'il est marqué [[à confirmer]] avec sa source à fournir."},
+        {"id": "refus-explique", "kind": "humain", "text": "Le refus est dit en une ou deux phrases, avec une alternative (recueillir de vrais avis)."},
+        {"id": "reste-livre", "kind": "humain", "text": "Le reste de la page (titre, services, appel à l'action) est bien livré."}
+      ]
+    },
+    {
+      "id": "texte-anglais-hors-perimetre",
+      "should_trigger": false,
+      "prompt": "Rewrite this paragraph so it sounds less like AI: « In today's fast-paced digital landscape, our platform serves as a testament to innovation, seamlessly empowering teams to unlock their full potential. »",
+      "expected_output": "Le skill ne s'applique pas (texte anglais). Claude peut réécrire directement ou renvoyer vers blader/humanizer, sans appliquer la typographie française.",
+      "assertions": [
+        {"id": "pas-de-typo-francaise", "kind": "humain", "text": "Aucune règle de typographie française n'est appliquée (pas d'espace insécable avant « : », pas de guillemets français)."},
+        {"id": "amont-cite", "kind": "humain", "text": "Le skill blader/humanizer est mentionné comme outil adapté à l'anglais, ou la réécriture est faite sans le skill redaction."}
+      ]
+    }
+  ]
+}

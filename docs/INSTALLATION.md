@@ -39,13 +39,13 @@ cd ~/.claude/skills/redaction
 python -m unittest discover -s tests
 ```
 
-Résultat attendu : `Ran 21 tests` puis `OK`.
+Résultat attendu : `Ran 28 tests` puis `OK`.
 
 Dans une nouvelle session Claude Code, le skill `redaction` apparaît dans
 la liste des skills disponibles ; une demande comme « rédige un court
 e-mail pour … » le charge.
 
-Vérification faite le 2026-09-28 (version 1.0.0) : clone dans un dossier
+Vérification faite le 2026-09-29 (version 1.1.0) : clone dans un dossier
 vide, puis la commande de test ci-dessus, sous Windows 11 avec Git Bash et
 Python 3.11.
 

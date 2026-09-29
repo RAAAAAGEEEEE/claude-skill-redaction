@@ -27,8 +27,8 @@ Définis dans [references/humanisation.md](../references/humanisation.md) :
 
 | Réglage | Valeur | Statut |
 |---|---|---|
-| Déclenchement | demande explicite « humanise », « version humaine », « moins IA » | préférence de l'utilisateur |
-| Coquilles par article long | 1 ou 2 | préférence de l'utilisateur |
+| Déclenchement | demande explicite « humanise », « version humaine », « moins IA » | option du skill, à la demande de l'utilisateur |
+| Coquilles par article long | 1 ou 2 | option du skill, à la demande de l'utilisateur |
 | Article long | 800 mots ou plus | convention du skill |
 | Zones interdites | chiffres, noms propres, citations, titres, textes juridiques et d'interface, fiche Google, e-mail transactionnel… | règle du skill |
 

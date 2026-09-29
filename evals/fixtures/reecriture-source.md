@@ -1,0 +1,1 @@
+Dans un monde où la visibilité est cruciale, la Boulangerie Lenoir n'est pas simplement une boulangerie, c'est un véritable écrin de saveurs. Ouverte depuis 2019, elle propose 12 variétés de pain. En conclusion, n'hésitez pas à passer la porte !
