@@ -125,6 +125,10 @@ sur un fait ou sur l'action demandée, pas sur une morale.
 
 ### 4. Relecture
 
+- **Modèle de rédaction** : brouillon d'un texte publié et factuel en Sonnet 5.5
+  effort `high` (en sous-agent si la session tourne sur un autre réglage) ; e-mail
+  ou message court en Sonnet `medium`. Jamais Haiku ni Fable pour un texte publié
+  (test à l'aveugle du 09/10/2026).
 - **Contrôle mécanique** : `python scripts/verifier.py <fichier>` (ou le
   texte sur l'entrée standard). Tout P0 se corrige avant la relecture.
 - **Relecture séparée** (texte publié ou envoyé) : lancer un sous-agent
