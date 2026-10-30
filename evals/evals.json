@@ -1,6 +1,6 @@
 {
   "skill_name": "redaction",
-  "skill_version": "1.1.0",
+  "skill_version": "1.2.0",
   "note": "Cas fictifs : noms, commerces et chiffres sont inventés pour l'exercice. Les attentes de type 'verifier' se contrôlent hors ligne (tests/test_evals.py) ; celles de type 'humain' se jugent à la lecture de la sortie de Claude.",
   "evals": [
     {

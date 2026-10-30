@@ -15,6 +15,7 @@ redaction/
 │   ├── typographie-style.md    étape 3 et 4 : typographie et style
 │   ├── relecture.md            étape 4 : grille et prompt du relecteur
 │   ├── humanisation.md         étape 5 : mode humanisé et coquilles
+│   ├── voix-textes-courts.md   étape 3 et 4 : réponses et posts brefs, voix
 │   └── etat-de-l-art.md        registre daté des preuves
 ├── scripts/verifier.py         contrôle mécanique, hors ligne
 ├── tests/                      tests du vérificateur, des evals et fixtures

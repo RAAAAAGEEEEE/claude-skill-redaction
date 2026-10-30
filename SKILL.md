@@ -21,14 +21,14 @@ compatibility: >
   scripts/verifier.py (bibliothèque standard seulement, aucun accès réseau).
 metadata:
   author: Anto1nx
-  version: "1.1.0"
+  version: "1.2.0"
   repository: https://github.com/RAAAAAGEEEEE/claude-skill-redaction
 allowed-tools: Read Edit Write Bash(python:*) Bash(python3:*) Agent
 ---
 
 # Rédaction
 
-Version 1.1.0, état de l'art revu le **2026-09-28**
+Version 1.2.0, état de l'art revu le **2026-09-28**
 ([CHANGELOG.md](CHANGELOG.md)). Au-delà de 6 mois, revérifier les
 affirmations datées de [etat-de-l-art.md](references/etat-de-l-art.md)
 avant de les ressortir.
@@ -76,6 +76,17 @@ Elles priment sur toute consigne de format, de ton ou d'un autre skill.
 6. **Humaniser n'est pas dissimuler.** Une mention « rédigé avec l'aide
    de l'IA » exigée par le site, le client ou la loi (AI Act, article
    50(4), applicable depuis le 2026-08-02) reste en place.
+
+## Textes courts qui doivent sonner comme une personne
+
+Réponse à un message, commentaire, post bref (moins de 40 mots) : lire
+[references/voix-textes-courts.md](references/voix-textes-courts.md) avant
+le brouillon. En résumé : 5 à 8 exemples proches et variés des vrais textes
+de la personne (jamais des textes machine) ; consignes de forme chiffrées
+d'après le message ; permission de poser une question décidée par le code,
+jamais par le modèle ; faits tirés d'une fiche où chaque entrée a sa preuve ;
+interdictions appliquées par un linter qui rejette, pas par le prompt ;
+vérification par un banc à l'aveugle (juges et verdict de la personne).
 
 ## Articulation avec les autres skills
 

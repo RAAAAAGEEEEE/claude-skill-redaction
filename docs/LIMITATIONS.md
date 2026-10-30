@@ -26,6 +26,11 @@
   session, moins fiable, et signalée.
 - **Typographie** : conventions de France par défaut ; public québécois
   à préciser dans le brief.
+- **Voix des textes courts : un seul corpus.** Les seuils du linter et
+  les taux (questions, longueur) viennent d'un corpus unique. Le banc à
+  l'aveugle compare des posts à des réponses (genre différent), sur 30
+  textes : il indique une tendance, pas une preuve. Le corpus d'origine
+  n'est pas entièrement écrit à la main (classes principal, or, machine).
 - **Date** : l'état de l'art est daté du 2026-09-28 et vieillit vite
   (lois, consignes de Google, études).
 

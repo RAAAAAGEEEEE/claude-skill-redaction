@@ -11,6 +11,7 @@ aussi le nommer : « avec le skill redaction, … ».
 | « Réécris ce texte, il fait trop IA » | Réécriture avec les motifs de `references/anti-ia.md`, sans ajouter ni retirer de fait |
 | « Relis ce mail » | Constats P0/P1/P2 cités, verdict ; pas de réécriture sauf demande |
 | « Version humanisée de cet article » | Réécriture puis une ou deux coquilles (article de 800 mots ou plus), listées en sortie |
+| « Réponds à ce message, comme moi, en une phrase » | Exemples proches de vos vrais textes, consignes chiffrées, faits sourcés, linter qui rejette, voir `references/voix-textes-courts.md` |
 | « Écris la page d'accueil » | Structure par le skill `copywriting` si c'est une page de vente ; langue, faits et relecture par `redaction` |
 
 ### Ce que vous recevez

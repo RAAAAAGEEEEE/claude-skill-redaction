@@ -3,6 +3,32 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 Versions selon [SemVer](https://semver.org/lang/fr/).
 
+## [1.2.0] - 2026-10-30
+
+### Ajouté
+- `references/voix-textes-courts.md` : méthode pour les textes courts qui
+  doivent sonner comme une personne (exemples classés par provenance et
+  choisis par pertinence moins redondance, consignes de forme chiffrées par
+  le code, permission de question décidée par le code, fiche de faits avec
+  preuves, linter commun avec seuils calibrés sur un corpus, chaîne
+  rédacteur, linter, juge de ressemblance, banc à l'aveugle avec deux juges
+  et un banc pour la personne).
+- `SKILL.md` : section « Textes courts qui doivent sonner comme une
+  personne » qui renvoie à cette référence.
+
+### Modifié
+- Versions mises à jour dans `SKILL.md`, `README.md`, `CONTRIBUTING.md`,
+  `docs/INSTALLATION.md`, `evals/evals.json`.
+- `docs/ARCHITECTURE.md`, `docs/LIMITATIONS.md`, `docs/USAGE.md`,
+  `README.md` : référence, limites de la méthode (genre posts contre
+  réponses, corpus pas entièrement écrit à la main, n = 30).
+
+### Cause
+- Les réponses brèves produites avec un prompt chargé d'interdictions
+  restaient reconnaissables (questions parachutées, amorces, reformulation
+  du message). Les interdictions n'étaient pas appliquées, seulement
+  demandées : elles deviennent un contrôle qui rejette.
+
 ## [1.1.0] - 2026-09-29
 
 ### Ajouté

@@ -54,7 +54,7 @@ jets générés.
 
 ## Statut
 
-**Bêta, version 1.1.0** (2026-09-29). Le vérificateur et les cas
+**Bêta, version 1.2.0** (2026-10-30). Le vérificateur et les cas
 d'évaluation sont couverts par 28 tests hors ligne. Le comportement du
 skill dans Claude (choix du skill, qualité des textes) n'a pas
 d'évaluation automatique : 6 cas sont fournis dans `evals/` pour être
@@ -129,6 +129,8 @@ standard. Détail : [docs/PRIVACY_AND_SECURITY.md](docs/PRIVACY_AND_SECURITY.md)
   étude indépendante ne les mesure en français au 2026-09-28.
 - Le vérificateur repère des formes, pas le sens : il ne voit ni un fait
   inventé ni un triplet bien déguisé. La relecture reste indispensable.
+- La méthode des textes courts (voix, linter, banc à l'aveugle) a été
+  calibrée sur un seul corpus ; ses seuils sont à refaire sur le vôtre.
 - Retirer les tics ne rend pas un texte « indétectable », et ce n'est pas
   le but.
 
@@ -154,6 +156,7 @@ blader/humanizer (MIT, Siqi Chen) : notice dans
 ## Documentation
 
 - [SKILL.md](SKILL.md) : la procédure lue par Claude
+- [references/voix-textes-courts.md](references/voix-textes-courts.md) : textes courts, voix, linter, banc à l'aveugle
 - [docs/INSTALLATION.md](docs/INSTALLATION.md)
 - [docs/USAGE.md](docs/USAGE.md)
 - [evals/README.md](evals/README.md) : cas d'évaluation
