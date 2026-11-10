@@ -3,6 +3,11 @@
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/).
 Versions selon [SemVer](https://semver.org/lang/fr/).
 
+## [1.3.0] - 2026-11-10
+
+### Ajouté
+- `SKILL.md` : section « Retours de terrain » (accents, cadratin, chaîne en trois temps, faits, affirmations de rang), avec dates.
+
 ## [1.2.0] - 2026-10-30
 
 ### Ajouté

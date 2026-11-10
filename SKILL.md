@@ -21,14 +21,14 @@ compatibility: >
   scripts/verifier.py (bibliothèque standard seulement, aucun accès réseau).
 metadata:
   author: Anto1nx
-  version: "1.2.0"
+  version: "1.3.0"
   repository: https://github.com/RAAAAAGEEEEE/claude-skill-redaction
 allowed-tools: Read Edit Write Bash(python:*) Bash(python3:*) Agent
 ---
 
 # Rédaction
 
-Version 1.2.0, état de l'art revu le **2026-09-28**
+Version 1.3.0, état de l'art revu le **2026-09-28**
 ([CHANGELOG.md](CHANGELOG.md)). Au-delà de 6 mois, revérifier les
 affirmations datées de [etat-de-l-art.md](references/etat-de-l-art.md)
 avant de les ressortir.
@@ -87,6 +87,18 @@ d'après le message ; permission de poser une question décidée par le code,
 jamais par le modèle ; faits tirés d'une fiche où chaque entrée a sa preuve ;
 interdictions appliquées par un linter qui rejette, pas par le prompt ;
 vérification par un banc à l'aveugle (juges et verdict de la personne).
+
+## Retours de terrain (ajout du 10/11/2026)
+
+Leçons tirées de textes publiés en série entre août et novembre 2026.
+
+- Un brief écrit sans accents fait revenir un texte français sans accents, et la relecture ne le signale pas (19/08). Écrire le brief avec ses accents, demander explicitement la typographie française et contrôler mécaniquement.
+- Le tiret cadratin (U+2014) se refuse par un contrôle mécanique sur chaque texte généré, pas seulement par le prompt : une centaine s'étaient glissés dans un blog et dans des gabarits (05/08).
+- La chaîne en trois temps (rédaction, relecture séparée, réécriture si la relecture relève quelque chose) ne s'allège pas sans test prouvant une qualité égale (06/08, 08/11). Un audit de la chaîne a trouvé des écarts : titre de une sans relecture, résumés de fiches, petites traductions ; chacun devient un chantier.
+- La relecture doit vérifier les faits cités : une licence fausse (CC BY au lieu de CC BY-NC) a été trouvée ainsi avant l'envoi de textes à la presse (07/11).
+- Une affirmation de rang (« premier ») se remplace par une formule vérifiable (« l'un des premiers ») ; se taire sur un fait que le site dit déjà (ici, que les textes sont tenus par des agents IA) contredit le site (07/11).
+- Un post se refuse si un fait n'est pas retrouvé mot pour mot dans la matière, quitte à ne rien publier ce jour-là (06/11).
+- La rédaction passe par l'abonnement Claude, jamais par un palier gratuit tiers ni des crédits achetés (06/08).
 
 ## Articulation avec les autres skills
 

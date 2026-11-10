@@ -54,7 +54,7 @@ jets générés.
 
 ## Statut
 
-**Bêta, version 1.2.0** (2026-10-30). Le vérificateur et les cas
+**Bêta, version 1.3.0** (2026-11-10). Le vérificateur et les cas
 d'évaluation sont couverts par 28 tests hors ligne. Le comportement du
 skill dans Claude (choix du skill, qualité des textes) n'a pas
 d'évaluation automatique : 6 cas sont fournis dans `evals/` pour être
